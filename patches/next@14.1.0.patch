@@ -1,0 +1,13 @@
+diff --git a/dist/build/create-compiler-aliases.js b/dist/build/create-compiler-aliases.js
+index c6bcf4326dba4f7f791c3974ee99dc0b6c43056f..9f4cc49312f2b3f9e0b5d49b70bbeada5e290d62 100644
+--- a/dist/build/create-compiler-aliases.js
++++ b/dist/build/create-compiler-aliases.js
+@@ -212,7 +212,7 @@ function createRSCAliases(bundledReactChannel, { layer, isEdgeServer, reactProdu
+             alias = Object.assign(alias, {
+                 "react/jsx-runtime$": `next/dist/server/future/route-modules/app-page/vendored/${layer}/react-jsx-runtime`,
+                 "react/jsx-dev-runtime$": `next/dist/server/future/route-modules/app-page/vendored/${layer}/react-jsx-dev-runtime`,
+-                react$: `next/dist/server/future/route-modules/app-page/vendored/${layer}/react`,
++                // react$: `next/dist/server/future/route-modules/app-page/vendored/${layer}/react`,
+                 "react-dom$": `next/dist/server/future/route-modules/app-page/vendored/${layer}/react-dom`,
+                 "react-server-dom-webpack/server.edge$": `next/dist/server/future/route-modules/app-page/vendored/${layer}/react-server-dom-webpack-server-edge`,
+                 "react-server-dom-webpack/server.node$": `next/dist/server/future/route-modules/app-page/vendored/${layer}/react-server-dom-webpack-server-node`
